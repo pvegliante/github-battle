@@ -2,28 +2,6 @@ import React from 'react';
 import propTypes from 'prop-types';
 import api from '../utilits/api';
 
-// class SelectLanguage extends React.Component {
-//   render() {
-//     const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
-//     return (
-//       <ul className='languages'>
-//         {languages.map((lang) => {
-//           return (
-//             <li
-//               style={lang === this.props.selectedLanguage ? { color: '#d0021b'} : null}
-//               onClick={this.props.onSelect.bind(null, lang)}
-//               key = {lang}
-//             >
-//               {lang}
-//             </li>
-//           );
-//         })
-//       }
-//       </ul>
-//     );
-//   }
-// }
-
 // from class to Stateless Function Component.
 function SelectLanguage(props) {
   const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
@@ -136,3 +114,24 @@ export default Popular;
 
 //BINDING ----------------------------------
 //
+// class SelectLanguage extends React.Component {
+//   render() {
+//     const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
+//     return (
+//       <ul className='languages'>
+//         {languages.map((lang) => {
+//           return (
+//             <li
+//               style={lang === this.props.selectedLanguage ? { color: '#d0021b'} : null}
+//               onClick={this.props.onSelect.bind(null, lang)}
+//               key = {lang}
+//             >
+//               {lang}
+//             </li>
+//           );
+//         })
+//       }
+//       </ul>
+//     );
+//   }
+// }
